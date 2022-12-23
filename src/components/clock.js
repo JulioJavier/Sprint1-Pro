@@ -1,4 +1,4 @@
-import { createP, createH1, createSpan, createDiv, createFooter, createDivClock } from "./components";
+import { createDivDates, createP, createH1, createSpan, createDiv, createFooter, createDivClock } from "./components";
 
 export const getRemainTime = deadline =>{
     let now = new Date(),
@@ -43,20 +43,16 @@ export const countDown = (deadline, elem, finalMessage) => {
         //createDiv('footer')
         if (t.remainTime <= 1) {
             clearInterval(timerUpdate)
+            createH1(textH1,'title')
             time = finalMessage
-            createSpan(time, elementClass)
+            createSpan(time, 'messageEnd')
             createFooter()
         } else {
             createH1(textH1,'title')
+            createDivDates()
             createDivClock(days,hours,minutes,seconds)
             createFooter()
-            // createSpan(days, elementClass)
-            // createSpan(hour, elementClass)
-            // createSpan(minutes, elementClass)
-            // createSpan(seconds, elementClass)
-            // createSpan(time, elementClass)
         }
-        // div.appendChild(p)
     }, 1000)
 }
 

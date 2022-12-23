@@ -1,74 +1,167 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;600;700&display=swap')
 @import "./colors"
 
-body
-    position: relative
-    background-color: $Very-dark-blue
-    background-image: url(../img/bg-stars.svg)
-    display: flex
-    justify-content: center
-    flex-direction: column
-    font-family: 'Red Hat Text', sans-serif
-    font-weight: 700
-    font-size: 14px
+
+@media screen and ( max-width: 600px )
+   body
+        font-family: 'Red Hat Text', sans-serif
+        font-weight: 700
+        font-size: 14px
+        position: relative
+        background-color: $Very-dark-blue
+        background-image: url(../img/bg-stars.svg)
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        .container
+            position: absolute
+            top: 250px
+            // background-color: #ccc
+            display: flex
+            justify-content: space-evenly
+            align-content: center
+            align-items: center
+            width: 50%
+            height: auto
+            gap: 5%
+            padding: auto
+            
+        .countDown
+            // position: absolute
+            text-align: center
+            padding: 1%
+            font-size: 65px
+            color: $Soft-red
+            width: auto
+            height: auto
+            background-color: $Dark-desaturated-blue
+            border-radius: 10px
+            box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75)
+            text-shadow: 4px 4px 2px rgba(0,0,0,0.6)
+
+        .footerImg
+            position: absolute
+            top: 460px
+            background-image: url(../img/pattern-hills.svg)
+            background-size: cover
+            width: 100%
+            height: 200px
+
+        .title
+            position: absolute
+            top: 80px
+            font-size: 30px
+            color: $White
+            text-align: center
+            text-shadow: 4px 4px 2px rgba(0,0,0,0.6)
+        .messageEnd
+            position: absolute
+            color: $Soft-red
+            font-size: 60px
+            top: 250px
+            text-align: center
+            text-shadow: 4px 4px 2px rgba(0,0,0,0.6)
+            
+        .containerIndex
+            position: absolute
+            // left: 485px
+            display: flex
+            width: 50%
+            height: auto
+            justify-content: space-evenly
+            align-content: center
+            top: 350px
+            gap: 5%
+            text-shadow: 4px 4px 2px rgba(0,0,0,0.30);
+            // background-color: #cdd
+            // flex-direction: row
+        .indexDates
+            color: $Grayish-blue
+            font-size: 18px
+            text-align: center
+
+@media screen and ( min-width: 601px )
+    body
+        font-family: 'Red Hat Text', sans-serif
+        font-weight: 700
+        font-size: 14px
+        position: relative
+        background-color: $Very-dark-blue
+        background-image: url(../img/bg-stars.svg)
+        display: flex
+        flex-direction: column
+        align-items: center
+
 
     .container
-        // position: absolute
-        // top: 250px
-        // left: 150px
-        //background-color: #ccc
+        position: absolute
+        top: 250px
+        // background-color: #ccc
         display: flex
-        justify-content: space-between
+        justify-content: space-evenly
         align-content: center
         align-items: center
-        gap: 10px
         width: 50%
-        height: 200px
-        padding: 10px
+        height: auto
+        gap: 5%
+        padding: auto
+        
+    .countDown
+        // position: absolute
+        text-align: center
+        font-size: 95px
+        color: $Soft-red
+        width: 140px
+        height: 130px
+        background-color: $Dark-desaturated-blue
+        border-radius: 10px
+        box-shadow: -1px 13px 5px 0px rgba(0,0,0,0.75)
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.6)
 
     .footerImg
         position: absolute
         top: 540px
+        // display: flex
+        // align-items: flex-end
         background-image: url(../img/pattern-hills.svg)
         background-size: cover
         width: 100%
         height: 200px
 
-// footer
-//     width: 100%
-//     height:100%
-//     background-color: $Grayish-blue
-//     background-image: url(../img/pattern-hills.svg)
+    .title
+        position: absolute
+        top: 80px
+        font-size: 30px
+        color: $White
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.6)
+    .messageEnd
+        position: absolute
+        color: $Soft-red
+        font-size: 60px
+        top: 250px
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.6)
+        
+    .containerIndex
+        position: absolute
+        // left: 485px
+        display: flex
+        width: 50%
+        height: auto
+        justify-content: space-evenly
+        align-content: center
+        top: 400px
+        gap: 5%
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.30);
+        // background-color: #cdd
+        // flex-direction: row
+    .indexDates
+        color: $Grayish-blue
+        font-size: 18px
+        text-align: center
 
-.countDown
-    // position: absolute
-    text-align: center
-    font-size: 100px
-    color: $Soft-red
-    width: 150px
-    background-color: $Dark-desaturated-blue
-    border-radius: 10px
-    // top: 300px
-    // bottom: 25%
-    // left: 25%
-    // right: 25%
 
-// .montain
-//     width: 100%
-//     background-image: url(../img/pattern-hills.svg)
-#top
-    p
-        font-family: Arial, Helvetica, sans-serif
-        font-size: 2rem
 
-.black-text
-    color: $black-color
 
-.red-text
-    color: $red-color
 
-.blue-text
-    color: $blue-color
-
-.green-text
-    color: $green-color
+    

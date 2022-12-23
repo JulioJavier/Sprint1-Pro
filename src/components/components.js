@@ -35,14 +35,17 @@ export const createDivClock = (days,hours,minutes,seconds) => {
 	<span class="countDown">${seconds}</span>
 	`
 	document.body.appendChild(container)
-	// let Dtdays = days
-	// let Dthour = hours
-	// let Dtminutes = minutes
-	// let Dtseconds = seconds
-	// let spanClass = 'countDown'
-	// let span = document.createElement("span")
-	// span.classList.add(spanClass)
-	// document.body.appendChild(span)
+}
+export const createDivDates = () => {
+	let index = document.createElement("div")
+	index.classList.add('containerIndex')
+	index.innerHTML = `
+	<p class="indexDates">DAYS</p>
+	<p class="indexDates">HOURS</p>
+	<p class="indexDates">MINUTES</p>
+	<p class="indexDates">SECONDS</p>
+	`
+	document.body.appendChild(index)
 }
 export const createFooter = () => {
 	let element = document.createElement("div")
