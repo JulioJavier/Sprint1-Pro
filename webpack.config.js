@@ -50,7 +50,7 @@ module.exports = {
     },
     plugins: [
 		new HtmlWebpackPlugin({
-			title: "Timer_Julio"
+			title: "JulioJavier"
 		})
 	]
 };
