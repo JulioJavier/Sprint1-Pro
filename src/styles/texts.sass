@@ -5,13 +5,26 @@ body
     position: relative
     background-color: $Very-dark-blue
     background-image: url(../img/bg-stars.svg)
-
+    display: flex
+    justify-content: center
+    flex-direction: column
     font-family: 'Red Hat Text', sans-serif
     font-weight: 700
     font-size: 14px
-    // display: flex
-    // justify-content: center
-    // align-items: center
+
+    .container
+        // position: absolute
+        // top: 250px
+        // left: 150px
+        //background-color: #ccc
+        display: flex
+        justify-content: space-between
+        align-content: center
+        align-items: center
+        gap: 10px
+        width: 50%
+        height: 200px
+        padding: 10px
 
     .footerImg
         position: absolute
@@ -28,14 +41,17 @@ body
 //     background-image: url(../img/pattern-hills.svg)
 
 .countDown
-    position: absolute
+    // position: absolute
+    text-align: center
     font-size: 100px
     color: $Soft-red
-    top: 300px
-    bottom: 25%
-    left: 25%
-    right: 25%
-
+    width: 150px
+    background-color: $Dark-desaturated-blue
+    border-radius: 10px
+    // top: 300px
+    // bottom: 25%
+    // left: 25%
+    // right: 25%
 
 // .montain
 //     width: 100%

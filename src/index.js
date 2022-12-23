@@ -1,7 +1,6 @@
-import { createP, createH1, createSpam, createDiv, createFooter } from "./components/components"
+import { createP, createH1, createSpam, createDiv, createFooter, createDivClock } from "./components/components"
 import { multipleOf } from "./components/utils"
 import { countDown } from "./components/clock";
-
 import "./styles/texts.sass";
 
 // createTop()

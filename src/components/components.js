@@ -25,6 +25,25 @@ export const createDiv = (id) => {
 	element.id = id
 	document.body.appendChild(element)
 }
+export const createDivClock = (days,hours,minutes,seconds) => {
+	let container = document.createElement("div")
+	container.classList.add('container')
+	container.innerHTML = `
+	<span class="countDown">${days}</span>
+	<span class="countDown">${hours}</span>
+	<span class="countDown">${minutes}</span>
+	<span class="countDown">${seconds}</span>
+	`
+	document.body.appendChild(container)
+	// let Dtdays = days
+	// let Dthour = hours
+	// let Dtminutes = minutes
+	// let Dtseconds = seconds
+	// let spanClass = 'countDown'
+	// let span = document.createElement("span")
+	// span.classList.add(spanClass)
+	// document.body.appendChild(span)
+}
 export const createFooter = () => {
 	let element = document.createElement("div")
 	document.body.appendChild(element)
