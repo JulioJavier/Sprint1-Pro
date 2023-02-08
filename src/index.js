@@ -5,7 +5,7 @@ import "./styles/texts.sass";
 
 // createTop()
 
-const month = 'Jan '
+const month = 'Apr'
 const day = '30 '
 const year = '2023'
 const hour = ' 13'
